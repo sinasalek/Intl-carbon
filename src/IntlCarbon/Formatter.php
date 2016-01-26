@@ -126,7 +126,7 @@ class Formatter extends IntlDateFormatter
         return parent::format($value);
     }
 
-    public function format($value)
+    public function format($value = null, $array = null)
     {
 
         $datetime = $this->GetDateTimeFromTimeStamp($value);
@@ -181,7 +181,7 @@ class Formatter extends IntlDateFormatter
         }
         if ($pattern == 'C') {
             $tmpFirstDay = $calendar->getFirstDayOfWeek();
-            if ($this->getCalendar() == IntlPhpDateFormater::GREGORIAN) {
+            if ($this->getCalendar() == IntlDateFormatter::GREGORIAN) {
                 $calendar->setFirstDayOfWeek(IntlCalendar::DOW_MONDAY);
             }
             $result = $calendar->get(IntlCalendar::FIELD_WEEK_OF_MONTH);
@@ -192,7 +192,7 @@ class Formatter extends IntlDateFormatter
             $tmpCalendar = $this->getCalendarObject();
             $tmpCalendar->set($calendar->get(IntlCalendar::FIELD_YEAR), $calendar->getActualMinimum(IntlCalendar::FIELD_MONTH), 1);
             $tmpFirstDay = $calendar->getFirstDayOfWeek();
-            if ($this->getCalendar() == IntlPhpDateFormater::GREGORIAN) {
+            if ($this->getCalendar() == IntlDateFormatter::GREGORIAN) {
                 $tmpCalendar->setFirstDayOfWeek(IntlCalendar::DOW_MONDAY);
                 $calendar->setFirstDayOfWeek(IntlCalendar::DOW_MONDAY);
             }
