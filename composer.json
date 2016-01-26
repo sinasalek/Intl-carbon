@@ -1,11 +1,11 @@
 {
-  "name": "sajjad-ser/intl-carbon",
+  "name": "amirhabibzadeh/intl-carbon",
   "description": "PHP Carbon for other countries",
   "license": "MIT",
   "authors": [
     {
-      "name": "Sajjad Servatjoo",
-      "email": "sajjad.servatjoo@gmail.com"
+      "name": "Amir Habibzadeh",
+      "email": "habibzade.amir@gmail.com"
     }
   ],
   "require": {
