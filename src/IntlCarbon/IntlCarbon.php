@@ -364,7 +364,7 @@ class IntlCarbon extends Carbon
      *
      * @return int
      */
-    public function diffFiltered(CarbonInterval $ci, Closure $callback, IntlCarbon $dt = null, $abs = true)
+    public function diffFiltered(CarbonInterval $ci, Closure $callback, Carbon $dt = null, $abs = true)
     {
         $start = $this;
         $end = ($dt === null) ? static::now($this->tz) : $dt;
