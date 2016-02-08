@@ -18,5 +18,29 @@ printf("%s",IntlCarbon::now()->setCalendar('islamic')->setLang('ar_UA')->toDateT
 //١٤٣٦-٠٩-٢٢ ٢٣:٣٩:٤٢
 ```
 
+## Instalation
+
+### With Composer
+```
+$ composer require amirhabibzadeh/intl-carbon
+```
+
+```json
+{
+    "require": {
+        "amirhabibzadeh/intl-carbon": "dev-master"
+    }
+}
+```
+
+```php
+<?php
+require 'vendor/autoload.php';
+
+use IntlCarbon\IntlCarbon;
+
+printf("Now: %s", IntlCarbon::now());
+```
+
 ## Todo:
 * complete tests
