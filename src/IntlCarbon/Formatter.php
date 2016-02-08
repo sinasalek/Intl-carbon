@@ -297,14 +297,7 @@ class Formatter extends IntlDateFormatter
     protected function getCalendarFromDateTime($datetime)
     {
         $calendar = $this->getCalendarObject();
-//        $c = IntlCarbon::createFromTimestamp($datetime->format('U'),$datetime->getTimezone());
-//        $c->setCalendar($calendar->getType());
         $c = IntlCarbon::instance($datetime);
-//        var_dump($c);
-//        var_dump($datetime);
-//        $calendar->setTime($datetime->format('U'));
-//        $calendar->set($datetime->format('Y'), $datetime->format('n') - 1, $datetime->format('d'),
-//            $datetime->format('G'), $datetime->format('i'), $datetime->format('s'));
         $calendar->set($c->format('Y'), $c->format('n') - 1, $c->format('d'),
             $c->format('G'), $c->format('i'), $c->format('s'));
         return $calendar;
