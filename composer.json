@@ -1,15 +1,22 @@
 {
-  "name": "amirhabibzadeh/intl-carbon",
-  "description": "PHP Carbon for other countries",
+  "name": "sinasalek/MultiCalendarDateTime ",
+  "description": "Feature Rich PHP DateTime Class (Based on Carbon) with Multi Calendar Systems support like Japanese,Persian,Islamic, etc (Based on Intl/ICU ext or its pollyfill)",
   "license": "MIT",
   "authors": [
     {
+      "name": "Sina Salek (sinasalek)",
+      "homepage": "https://sina.salek.ws",
+      "role": "Developer"
+    },
+    {
       "name": "Amir Habibzadeh",
-      "email": "habibzade.amir@gmail.com"
+      "email": "habibzade.amir@gmail.com",
+      "role": "Original Crbon+Intl integrator"
     }
   ],
   "require": {
-    "nesbot/carbon": "^1.19"
+    "nesbot/carbon": "^2.5",
+    "symfony/intl": "^4.1.6"
   },
   "autoload": {
     "psr-0": {
