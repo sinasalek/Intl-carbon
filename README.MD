@@ -1,6 +1,6 @@
 Intl-Carbon
 =============
-PHP Carbon extension with IntlCalendars to support:
+PHP Carbon extension with IntlCalendars to support and also pollyfill for Intl:
 * Japanese
 * Buddhist
 * Chinese
