@@ -1,5 +1,5 @@
 {
-  "name": "sinasalek/multi-calendar-date-time ",
+  "name": "sinasalek/multi-calendar-date-time",
   "description": "Feature Rich PHP DateTime Class (Based on Carbon) with Multi Calendar Systems support like Japanese,Persian,Islamic, etc (Based on Intl/ICU ext or its pollyfill)",
   "license": "MIT",
   "authors": [
