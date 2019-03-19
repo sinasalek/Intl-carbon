@@ -107,7 +107,7 @@ $ composer require amirhabibzadeh/intl-carbon
 ```json
 {
     "require": {
-        "sinasalek/MultiCalendarDateTime": "dev-master"
+        "sinasalek/multi-calendar-date-time": "dev-master"
     }
 }
 ```
